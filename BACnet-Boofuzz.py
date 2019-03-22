@@ -8,7 +8,7 @@ import time
 target_ip = "192.168.201.207"
 
 def target_alive():
-    response = os.system("ping -c 1 " + target_ip)
+    response = os.system("nc -u -z -v -w 1 " + target_ip + " 47808")
     if response == 0:
         return True
     else:
