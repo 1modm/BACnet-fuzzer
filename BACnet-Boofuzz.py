@@ -36,7 +36,7 @@ def main():
         s_byte(0x01,name='version')
         s_byte(0x04,name='control')
     s_block_end()
-    if s_block_start("bacnet_apdu")
+    if s_block_start("bacnet_apdu"):
         s_byte(0x00,name='apdu_type')
         s_byte(0x05,name='max_response_segments')
         s_byte(0x01,name='invoke_id')
